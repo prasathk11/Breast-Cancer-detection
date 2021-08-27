@@ -1,0 +1,17 @@
+
+#### prediction
+pytorch
+torchvision
+pytorch_lightning
+numpy
+pandas 
+Pillow
+tqdm
+
+##### training
+# neptune-client
+# efficientnet_pytorch
+
+##### evaluation
+# pycocotools
+# ipyplot
