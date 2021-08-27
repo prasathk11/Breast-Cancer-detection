@@ -1,0 +1,10 @@
+FROM pytorch/pytorch:1.8.0-cuda11.1-cudnn8-runtime
+WORKDIR /user/src/app
+
+COPY requirements-base.txt ./
+RUN pip install --no-cache-dir -r requirements-base.txt
+
+COPY . .
+
+EXPOSE 5000
+CMD [ "flask", "run" ]
